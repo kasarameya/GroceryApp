@@ -19,4 +19,8 @@ private productServiceUrl= "/server/api/v1/products";
     )
   };
 
+  saveProduct(product){
+    return this.http.post<product>(this.productServiceUrl, product);
+  }
+
 }
